@@ -2,8 +2,20 @@
 <html>
   <head>
     <title>Playground</title>
-    <link rel="stylesheet" type="text/css" href="/assets/styles/salesforce-lightning-design-system.css">
+    <link rel="stylesheet" type="text/css" href="/assets/styles/salesforce-lightning-design-system.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=0"/>
   </head>
+  
+  <style type='text/css'>
+      .embeddedServiceLiveAgentChatButton .helpButton .uiButton { background-color: #E40046 ; font-family: "Salesforce Sans", sans-serif; }
+      .embeddedServiceLiveAgentChatButton .helpButton .uiButton:focus {outline: 2px solid #E40046 }
+      @font-face {
+          font-family: 'Salesforce Sans';
+          src: url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.woff') format('woff'),
+          url('https://www.sfdcstatic.com/system/shared/common/assets/fonts/SalesforceSans/SalesforceSans-Regular.ttf') format('truetype');
+      }
+  </style>
+  
   <body>
 
     <div class="slds-grid slds-wrap">
@@ -18,6 +30,11 @@
             <div class="slds-media__body">
               <p class="slds-page-header__title slds-truncate slds-align-middle" title="Vapor-Swift-LEX - Playground">Vapor-Swift-LEX - Playground</p>
               <p class="slds-text-body--small slds-page-header__info">Full • Swift • Stack</p>
+              
+              <a href="login">Login with Salesforce
+                  <span class="slds-assistive-text">entity type</span>
+              </a>
+              
             </div>
           </div>
         </div>
@@ -324,5 +341,45 @@
       </nav>
     </div>
 
+
+<!-- Chat Button Online Code -->
+<img id="liveagent_button_online_5730j000000CaTX" style="bottom:1em; right:1em; position: fixed; width: 60px; display: none; border: 0px none; cursor: pointer; " onclick="liveagent.startChat('5730j000000CaTX')" src="https://awesomedev-awesomedev.cs53.force.com/resource/1493029815000/OnlineChatButton" />
+
+<!-- Chat Button Offline Code -->
+<img id="liveagent_button_offline_5730j000000CaTX" style="bottom:1em; right:1em; position: fixed; width: 60px; display: none; border: 0px none; " src="https://awesomedev-awesomedev.cs53.force.com/resource/1493029815000/OfflineChatButton" />
+
+
   </body>
+  
+  
+  <script type='text/javascript' src='https://service.force.com/embeddedservice/1.0/esw.min.js'></script>
+      <script type='text/javascript'>
+      var initESW = function(gslbBaseUrl) {
+      
+      embedded_svc.settings.avatarImgURL = '';
+      embedded_svc.settings.prechatBackgroundImgURL = '';
+      embedded_svc.settings.waitingStateBackgroundImgURL = '';
+      embedded_svc.settings.smallCompanyLogoImgURL = '';
+      
+      
+      embedded_svc.settings.displayHelpButton = true; //Or false
+      //embedded_svc.settings.onlineText = '...'; (defaults to Chat with an Expert, localized)
+      //embedded_svc.settings.offlineText = '...'; (defaults to Agent Offline, localized)
+      //embedded_svc.settings.onlineLoadingText = '...'; (defaults to Loading, localized)
+      embedded_svc.init('https://bisk--AwesomeDev.cs53.my.salesforce.com', 'https://d.la3-c2cs-phx.salesforceliveagent.com/chat', 'https://c.la3-c2cs-phx.salesforceliveagent.com/content', 'https://awesomedev-awesomedev.cs53.force.com/', '5720j000000CaSZ', '00D0j000000CpXq', '5730j000000CaTc', '1.0', gslbBaseUrl, '39.0', 'Lightning_Talk_Snap_In_Deployment', 'EmbeddedServiceLiveAgent_Parent04I0j0000004C9IEAU_15bb00cceb8'); }; if (!window.embedded_svc) { var s = document.createElement('script'); s.setAttribute('src', 'https://bisk--AwesomeDev.cs53.my.salesforce.com/embeddedservice/1.0/esw.min.js'); s.onload = function() { initESW(null); }; document.body.appendChild(s);} else { initESW('https://bisk--AwesomeDev.cs53.my.salesforce.com'); }
+      </script>
+      
+      
+  <!-- Change the domain name to the correct one for your org.
+  <script type='text/javascript' src='https://c.la3-c2cs-phx.salesforceliveagent.com/content/g/js/39.0/deployment.js'></script>
+  <script type='text/javascript'>
+  
+ liveagent.init('https://d.la3-c2cs-phx.salesforceliveagent.com/chat', '5720j000000CaSZ', '00D0j000000CpXq');
+ if (!window._laq) { window._laq = []; }
+ window._laq.push(function(){liveagent.showWhenOnline('5730j000000CaTX', document.getElementById('liveagent_button_online_5730j000000CaTX'));
+ liveagent.showWhenOffline('5730j000000CaTX', document.getElementById('liveagent_button_offline_5730j000000CaTX'));
+ });
+ </script>
+  -->
+  
 </html>

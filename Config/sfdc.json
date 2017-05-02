@@ -1,0 +1,10 @@
+{
+    "oauth": {
+        "consumerKey": "3MVG9AJuBE3rTYDhfkbtnXXWx77PJgdTsSe33eAU0KxOdzzQOYQ9GCBcAphksml18eaC.LtWyQ1LOO80FvcZX",
+        "consumerSecret": "5309726271616226373",
+        "redirectURL": "http://localhost:8080/authorized",
+        "sandboxURL": "https://test.salesforce.com",
+        "developerURL": "https://comdev-communitydev.cs61.force.com/test",
+        "apiVersion": "v39.0"
+    }
+}
