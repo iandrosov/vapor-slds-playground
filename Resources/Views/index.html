@@ -349,14 +349,24 @@
       <script type='text/javascript'>
       var initESW = function(gslbBaseUrl) {
       
-      embedded_svc.settings.avatarImgURL = '';
-      embedded_svc.settings.prechatBackgroundImgURL = '';
-      embedded_svc.settings.waitingStateBackgroundImgURL = '';
-      embedded_svc.settings.smallCompanyLogoImgURL = '';
+      embedded_svc.settings.avatarImgURL = 'https://awesomedev-awesomedev.cs53.force.com/resource/1493395956000/Astro_Hug_Avatar';
+      embedded_svc.settings.prechatBackgroundImgURL = 'https://awesomedev-awesomedev.cs53.force.com/resource/1493396280000/Trailhead_banner_320x100';
+      embedded_svc.settings.waitingStateBackgroundImgURL = 'https://awesomedev-awesomedev.cs53.force.com/resource/1493396110000/Waiting_Chat_Help_Robot';
+      embedded_svc.settings.smallCompanyLogoImgURL = 'https://awesomedev-awesomedev.cs53.force.com/resource/1493396194000/Minimized_Logo_25x25_SF';
       
       
       embedded_svc.settings.displayHelpButton = true;
-      embedded_svc.init('https://bisk--AwesomeDev.cs53.my.salesforce.com', 'https://d.la3-c2cs-phx.salesforceliveagent.com/chat', 'https://c.la3-c2cs-phx.salesforceliveagent.com/content', 'https://awesomedev-awesomedev.cs53.force.com/', '5720j000000CaSZ', '00D0j000000CpXq', '5730j000000CaTc', '1.0', gslbBaseUrl, '39.0', 'Lightning_Talk_Snap_In_Deployment', 'EmbeddedServiceLiveAgent_Parent04I0j0000004C9IEAU_15bb00cceb8'); }; if (!window.embedded_svc) { var s = document.createElement('script'); s.setAttribute('src', 'https://bisk--AwesomeDev.cs53.my.salesforce.com/embeddedservice/1.0/esw.min.js'); s.onload = function() { initESW(null); }; document.body.appendChild(s);} else { initESW('https://bisk--AwesomeDev.cs53.my.salesforce.com'); }
+      embedded_svc.settings.onlineText = 'Chat with a Rep';
+      embedded_svc.settings.offlineText = 'Rep Offline';
+      embedded_svc.settings.onlineLoadingText = 'Loading';
+      
+      embedded_svc.init('https://bisk--AwesomeDev.cs53.my.salesforce.com', 'https://d.la3-c2cs-phx.salesforceliveagent.com/chat', 'https://c.la3-c2cs-phx.salesforceliveagent.com/content', 'https://awesomedev-awesomedev.cs53.force.com/', '5720j000000CaSZ', '00D0j000000CpXq', '5730j000000CaTc', '1.0', gslbBaseUrl, '39.0', 'Lightning_Talk_Snap_In_Deployment', 'EmbeddedServiceLiveAgent_Parent04I0j0000004C9IEAU_15bb00cceb8'); }; 
+      if (!window.embedded_svc) { 
+        var s = document.createElement('script'); 
+        s.setAttribute('src', 'https://bisk--AwesomeDev.cs53.my.salesforce.com/embeddedservice/1.0/esw.min.js'); 
+        s.onload = function() { initESW(null); }; 
+        document.body.appendChild(s);} else { initESW('https://bisk--AwesomeDev.cs53.my.salesforce.com'); 
+      }
       </script>
   
   <!--
@@ -376,6 +386,6 @@
       embedded_svc.init('https://bisk--AwesomeDev.cs53.my.salesforce.com', 'https://d.la3-c2cs-phx.salesforceliveagent.com/chat', 'https://c.la3-c2cs-phx.salesforceliveagent.com/content', 'https://awesomedev-awesomedev.cs53.force.com/', '5720j000000CaSZ', '00D0j000000CpXq', '5730j000000CaTc', '1.0', gslbBaseUrl, '39.0', 'Lightning_Talk_Snap_In_Deployment', 'EmbeddedServiceLiveAgent_Parent04I0j0000004C9IEAU_15bb00cceb8'); }; if (!window.embedded_svc) { var s = document.createElement('script'); s.setAttribute('src', 'https://bisk--AwesomeDev.cs53.my.salesforce.com/embeddedservice/1.0/esw.min.js'); s.onload = function() { initESW(null); }; document.body.appendChild(s);} else { initESW('https://bisk--AwesomeDev.cs53.my.salesforce.com'); 
       }
       </script>
-  -->    
+  -->
       
 </html>
